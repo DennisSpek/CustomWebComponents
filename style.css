@@ -1,0 +1,93 @@
+/* ==========================================================================
+    Your styles in this section, if you need them
+   ========================================================================== */
+
+/* ==========================================================================
+    Theme styles: 
+    - do not change them
+    - use them in your components
+    - colors are RGB values
+   ========================================================================== */
+:root {
+  --color-light: 255 255 255;
+  --color-dark: 33 33 33;
+  --color-balanced: 56 145 178;
+  --color-brave: 85 69 140;
+  --color-energized: 36 35 72;
+  --color-fair: 160 216 179;
+  --color-fluent: 210 83 128;
+  --color-royal: 51 48 228;
+  --color-assertive: 243 36 36;
+  --color-mild: 246 107 14;
+  --color-positive: 107 203 119;
+  --color-stable: 225 225 225;
+  --spacing-xs: 4px;
+  --spacing-s: 8px;
+  --spacing-m: 12px;
+  --spacing-l: 16px;
+  --spacing-xl: 20px;
+  --radius-s: 4px;
+  --radius-m: 8px;
+  --radius-l: 12px;
+}
+
+/* ==========================================================================
+    Base styles, do not touch
+   ========================================================================== */
+*,
+*:before,
+*:after {
+  box-sizing: border-box;
+}
+html {
+  color: rgb(var(--color-dark));
+  font-size: 1em;
+  line-height: 1.4;
+  background-color: rgb(var(--color-balanced) / 10%);
+  font-family: sans-serif;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+}
+
+form {
+  width: 600px;
+  margin: var(--spacing-xl) auto;
+  background-color: rgb(var(--color-light));
+  padding: var(--spacing-m);
+  border-radius: var(--radius-s);
+  display: flex;
+  flex-direction: column;
+  gap: var(--spacing-xl);
+}
+
+.sprite {
+  position: absolute;
+  left: -999em;
+  width: 0;
+  height: 0;
+  top: -999em;
+}
+
+svg {
+  width: 24px;
+  height: 24px;
+}
+
+::-moz-selection {
+  background: rgb(var(--color-brave));
+  color: rgb(var(--color-light));
+  text-shadow: none;
+}
+
+::selection {
+  background: rgb(var(--color-brave));
+  color: rgb(var(--color-light));
+  text-shadow: none;
+}
+
+:not(:defined) {
+  display: none;
+}
